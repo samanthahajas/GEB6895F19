@@ -47,13 +47,15 @@ help(lm)
 # The remove function removes everything in the workspace when the list is all.
 rm(list=ls(all=TRUE))
 
+#rm means 'remove'.
+
 # Load library of functions.
 # source('MyRcode1.R')
 
 # Set working directory.
 # The '<-' operator denotes right-to-left assignment.
 # wdPath <- '/path/to/your/folder'
-wdPath <- 'C:/Users/le279259/Documents/Teaching/GEB6895_Fall2019/GitRepos/demo_03_intro_to_R'
+wdPath <- 'C:/Users/saman/Documents/GEB6895_Git'
 setwd(wdPath)
 
 # Check this in unix (doesn't always work in Windows).
@@ -100,6 +102,7 @@ load(workspacePath)
 # The variables above are character strings.
 class(workspacePath)
 
+
 # The sprintf() is handed down from C.
 # (Many C and FORTRAN programs are used in the background in R.)
 string1 <- 'first string'
@@ -138,6 +141,10 @@ pi_plus <- some_numbers.integers + value_of_pi
 # The concatenation function c() is used to form lists of objects.
 more_integers <- c(some_numbers.integers, 11:15)
 
+#Let's break this
+some_numbers.integers + more_integers
+
+c(1,2,3,4,5,6)+c(1,2)
 
 # Lets make a vector of important numbers.
 value_of_e <- exp(1)
